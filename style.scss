@@ -84,9 +84,10 @@ button:hover {
 
 .input {
  display: flex;
-  #add {
+ #add-to-list {
     position: absolute;
-    left: 0px;
+    right: 40px;
+    // top: 10px;
   }
 }
 
