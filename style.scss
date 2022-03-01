@@ -94,6 +94,7 @@ input {
     display: flex;
     justify-content: center;
     align-content: center;
+    align-items: center;
   width: 350px;
   height: 60px;
   background: #2b2a33;
@@ -109,18 +110,15 @@ input {
 ::placeholder {
   font-size: 16px;
   padding: 19px 170px 18px 32px;
+  color:#6c6a7c;
 }
 
-.item {
-  width: 340px;
-  height: 50px;
-  background-color: #2b2a33;
-  color: white;
-  font-family: Jost;
-  font-size: 16px;
-  margin-left: 27px;
-  margin-right: 27px;
+input:focus { 
+    color: #FFFFFF; // put your color here
+    font-family: Jost;
 }
+
+
 
 #tasks {
     display: flex;
@@ -143,9 +141,23 @@ input {
 }
 
 .checkBox {
-//   position: absolute;
-//   left: 0px;
-  border-color: #e58181;
+  position: absolute;
+  left: 0px;
+  border: solid #e58181;
+  width: 16px;
+  height: 16px;
 }
+
+.item {
+    // width: 340px;
+    height: 50px;
+    background-color: #2b2a33;
+    color: white;
+    font-family: Jost;
+    font-size: 16px;
+    margin-left: 27px;
+    margin-right: 27px;
+    margin-top: 18px;
+  }
 
 }

@@ -28,16 +28,22 @@ const addToDo = () => {
     newListItem.classList.add("item");
     toDoList.appendChild(newListItem);
 
-    // const itemCheckBox = document.createElement("input");
-    // itemCheckBox.type = "checkbox";
-    // itemCheckBox.classList.add("checkBox");
-    // newListItem.appendChild(itemCheckBox);
-
-    // const deleteBin = document.createElement("img");
-    // deleteBin.src = "svg/delete-bin-vector.svg";
-    // newListItem.appendChild("deleteBin");
+// document.getElementById("task-paragraph").remove();
 
     newListItem.innerHTML = `${newItem}`;
+
+    const itemCheckBox = document.createElement("input");
+    itemCheckBox.type = "checkbox";
+    itemCheckBox.classList.add("checkBox");
+    newListItem.appendChild(itemCheckBox);
+
+    
+    const deleteBin = document.createElement("img");
+    deleteBin.classList.add("delete-bin");
+    deleteBin.src = "svg/delete-bin-vector.svg";
+    newListItem.appendChild("deleteBin");
+    
+
 }
 
 addButton.addEventListener("click", addToDo);
