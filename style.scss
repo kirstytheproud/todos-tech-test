@@ -20,7 +20,12 @@ body {
     background-color: #232229;
 }
 
-@media screen and (min-width: 375px) {
+// @media screen and (min-width: 375px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
     
 
     .logo {
@@ -100,4 +105,13 @@ input {
     padding: 19px 170px 18px 32px;
 }
 
+.item {
+    width:369px;
+    height: 50px;
+    background-color: #2B2A33;
+    color: white;
+    font-family: Jost;
+    font-size: 16px;
 }
+
+// }
