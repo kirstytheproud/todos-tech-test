@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+
+// colours:
+// #2B2A33
+// #6C6A7C
+// #FFFFFF
+// #E58181
+
+// variables
+$accent-color:#E58181;
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #232229;
+}
+
+@media screen and (min-width: 375px) {
+    
+
+    .logo {
+        font-family: Jost;
+        font-size: 24px;
+        color: white;
+        margin-left: 26px;
+        margin-top: 29px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+
+h1 {
+    font-family: Jost;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 222px;
+  
+}
+
+button {
+    background-image: linear-gradient(180deg, #e1a0a0, #e58181 );
+    box-shadow: 0 10px 40px #6B3838;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 7px;
+    width: 120px;
+    height: 50px;
+    margin-right: 28px;
+    margin-top: 22px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+
+
+}
+
+button:hover {
+    background-image: linear-gradient(180deg, #E2C1C1, #EA8282);
+}
+
+
+.input{
+    position: absolute;
+
+    #add {
+        position: relative;
+        left: 0px;
+    }
+}
+
+input {
+    width: 350px;
+    height: 60px;
+    background: #2B2A33;
+    border: 1px dashed #6C6A7C;
+    box-sizing: border-box;
+    border-radius: 7px;
+    margin-left: 27px;
+    margin-right: 27px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 126px;
+}
+
+::placeholder{
+    font-size: 16px;
+    padding: 19px 170px 18px 32px;
+}
+
+}
