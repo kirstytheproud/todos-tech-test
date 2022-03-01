@@ -1,6 +1,8 @@
+const resetButton = document.querySelector(".reset");
 const input = document.getElementById("input");
 const addButton = document.getElementById("add-to-list");
 const toDoList = document.querySelector(".to-do-list__container")
+
 
 // const getNameInput = (event) => {
 //     const newName = input.value;
@@ -21,11 +23,19 @@ const toDoList = document.querySelector(".to-do-list__container")
 
 const addToDo = () => {
     const newItem = input.value;
-   
     console.log(newItem)
     const newListItem = document.createElement("div");
     newListItem.classList.add("item");
     toDoList.appendChild(newListItem);
+
+    // const itemCheckBox = document.createElement("input");
+    // itemCheckBox.type = "checkbox";
+    // itemCheckBox.classList.add("checkBox");
+    // newListItem.appendChild(itemCheckBox);
+
+    // const deleteBin = document.createElement("img");
+    // deleteBin.src = "svg/delete-bin-vector.svg";
+    // newListItem.appendChild("deleteBin");
 
     newListItem.innerHTML = `${newItem}`;
 }

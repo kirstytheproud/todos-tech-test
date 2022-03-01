@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap");
 
 // colours:
 // #2B2A33
@@ -7,111 +7,145 @@
 // #E58181
 
 // variables
-$accent-color:#E58181;
-
-
+$accent-color: #e58181;
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #232229;
+  background-color: #232229;
 }
 
-// @media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) {
 
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-    
+.container {
+    display: flex;
+    flex-direction: column;
+}
 
-    .logo {
-        font-family: Jost;
-        font-size: 24px;
-        color: white;
-        margin-left: 26px;
-        margin-top: 29px;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-    }
-
+.logo {
+  font-family: Jost;
+  font-size: 24px;
+  color: white;
+  margin-left: 26px;
+  margin-top: 29px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
 
 h1 {
-    font-family: Jost;
-    color: white;
-    font-size: 36px;
-    text-align: center;
+  font-family: Jost;
+  color: white;
+  font-size: 36px;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-content: center;
   margin-top: 222px;
-  
+}
+
+.intro-paragraph {
+    display: flex;
+  color: #6c6a7c;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 18px;
+  margin-bottom: 36px;
+  margin-left: 28px;
+  margin-right: 28px;
+
 }
 
 button {
-    background-image: linear-gradient(180deg, #e1a0a0, #e58181 );
-    box-shadow: 0 10px 40px #6B3838;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 7px;
-    width: 120px;
-    height: 50px;
-    margin-right: 28px;
-    margin-top: 22px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-
-
-
+  background-image: linear-gradient(180deg, #e1a0a0, #e58181);
+  box-shadow: 0 10px 40px #6b3838;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 7px;
+  width: 120px;
+  height: 50px;
+  margin-right: 28px;
+  margin-top: 22px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
 button:hover {
-    background-image: linear-gradient(180deg, #E2C1C1, #EA8282);
+  background-image: linear-gradient(180deg, #e2c1c1, #ea8282);
 }
 
-
-.input{
+.input {
+ display: flex;
+  #add {
     position: absolute;
-
-    #add {
-        position: relative;
-        left: 0px;
-    }
+    left: 0px;
+  }
 }
 
 input {
-    width: 350px;
-    height: 60px;
-    background: #2B2A33;
-    border: 1px dashed #6C6A7C;
-    box-sizing: border-box;
-    border-radius: 7px;
-    margin-left: 27px;
-    margin-right: 27px;
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-top: 126px;
+  width: 350px;
+  height: 60px;
+  background: #2b2a33;
+  border: 1px dashed #6c6a7c;
+  box-sizing: border-box;
+  border-radius: 7px;
+  margin-left: 27px;
+  margin-right: 27px;
+
+//   margin-top: 126px;
 }
 
-::placeholder{
-    font-size: 16px;
-    padding: 19px 170px 18px 32px;
+::placeholder {
+  font-size: 16px;
+  padding: 19px 170px 18px 32px;
 }
 
 .item {
-    width:369px;
-    height: 50px;
-    background-color: #2B2A33;
-    color: white;
-    font-family: Jost;
-    font-size: 16px;
+  width: 340px;
+  height: 50px;
+  background-color: #2b2a33;
+  color: white;
+  font-family: Jost;
+  font-size: 16px;
+  margin-left: 27px;
+  margin-right: 27px;
 }
 
-// }
+#tasks {
+    display: flex;
+  font-family: Jost;
+  font-style: normal;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  margin-left: 28px;
+  margin-top: 53px;
+}
+
+#task-paragraph {
+    margin-left: 28px;
+    margin-top: 21px;
+    font-size: 16px;
+    color:#6c6a7c;
+    font-family: Jost;
+}
+
+.checkBox {
+//   position: absolute;
+//   left: 0px;
+  border-color: #e58181;
+}
+
+}

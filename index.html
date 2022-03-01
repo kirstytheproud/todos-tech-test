@@ -10,11 +10,13 @@
   <body>
     <div class="logo">MyTodos</div>
     <div class="container">
-      <button>Reset</button>
-      <h1 class="title">What is your name?</h1>
+      <button class="reset" value="Reload Page" onClick="window.location.reload(true)">Reset</button>
+      <h1 class="title">Welcome back Kirsty!</h1>
+
+      <p class="intro-paragraph">Let's enter the tasks we need to complete for this upcoming week. Just use the input below to create a todo.</p>
 
       <div class="input">
-        <input id="input" type="text" placeholder="Please enter your name..." />
+        <input id="input" type="text" placeholder="Add your task here..." onclick="this.value=''"  />
         <svg
           id="add-to-list"
           width="21"
@@ -29,7 +31,8 @@
         </svg>
       </div>
 
-      <div class="to-do-list__container"> 
+      <div class="to-do-list__container"> <h4 id="tasks">Tasks</h4>
+        <p id="task-paragraph"> All tasks have been completed. Great job!</p>
    
       </div>
     </div>
